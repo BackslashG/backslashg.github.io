@@ -2,6 +2,25 @@
     <head>
         <link rel="icon" href="/images/favicon.ico">
         <title>BackslashG Live</title>
+        <style>
+               body { overflow-x: hidden; }
+      .section {
+        justify-content: center;
+      }
+      .section h1 {
+        font-size: 3.5rem !important;
+        font-weight: 200;
+      }
+      .section code {
+        color: #145a32;
+      }
+      .button1 {
+  background-color: rgb(194, 194, 194);
+  color: black;
+  border: 2px solid #555555;
+  position:absolute; top:0; right:0;
+}
+        </style>
     </head>
   <body>
     <!-- Add a placeholder for the Twitch embed -->
@@ -13,8 +32,7 @@
     <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
     <script type="text/javascript">
       new Twitch.Embed("twitch-embed", {
-        width: 1200,
-        height: 625,
+        
         channel: "backslashg",
         // Only needed if this page is going to be embedded on other websites
         parent: ["backslashg.xyz", "www.backslashg.xyz"]
