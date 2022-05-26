@@ -1,0 +1,6 @@
+.rainbow {
+   color: goldenrod;
+  }
+  .rainbow:hover {
+    color: yellow;
+  }
