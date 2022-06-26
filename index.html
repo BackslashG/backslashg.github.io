@@ -18,40 +18,6 @@ Created by Backslash
       );
     </script>
 <link rel="stylesheet" href="styles.css" />
-<script>
-	let isIE11 = (function () {
-    // true on IE11, false on Edge and other IEs/browsers.
-    let isIE11 = !!window.MSInputMethodContext && !!document.documentMode,
-        ua = window.navigator.userAgent;
-
-    if (ua.indexOf("AppleWebKit") > 0) {
-        return false;
-    } else if (ua.indexOf("Lunascape") > 0) {
-        return false;
-    } else if (ua.indexOf("Sleipnir") > 0) {
-        return false;
-    }
-
-    array = /(msie|rv:?)\s?([\d\.]+)/.exec(ua);
-    version = (array) ? array[2] : '';
-
-    return (version === 11) ? true : false;
-});
-	
-	let showBrowserAlert = (function () {
-    if (document.querySelector('.unsupported-browser')) {
-        let d = document.getElementsByClassName('unsupported-browser');
-
-        is_IE11 = isIE11();
-
-        if (is_IE11) {
-             window.location.replace("www.backslashg.xyz/assets/unsupported.png");
-        }
-    }
-});
-
-document.addEventListener('DOMContentLoaded', showBrowserAlert);
-	</script>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
